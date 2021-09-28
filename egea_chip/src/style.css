@@ -1,0 +1,88 @@
+body {
+  background: url("img/draco_1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  color: #FFF;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+.icon {
+    color: #fff;
+    font-size: 2.5em;
+}
+.Button {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  display: inline-block;
+  font: inherit;
+  height: 10px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  width: 100%;
+}
+
+.Button:focus {
+  outline: none;
+}
+
+.Button::-moz-focus-inner {
+  border: 0;
+}
+
+.Button-inner {
+  align-items: center;
+  background: rgba(136,117,117,0.8);;
+  border: 2px solid transparent;
+  border-radius: 99em;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  height: 4.5em;
+  min-width: 2.5em;
+  padding: 0 1em;
+  position: rela0pxtive;
+  transition: 0.2s ease;
+  width: 100%;
+  text-decoration: none;
+}
+
+.Button:focus .Button-inner {
+  border-color: #fff;
+  box-shadow: 0 0 0 2px #456BD9;
+}
+
+.Button:hover .Button-inner {
+  filter: brightness(1.1);
+  text-decoration: none;
+}
+
+.Button:active .Button-inner {
+  filter: brightness(0.9);
+  text-decoration: none;
+
+}

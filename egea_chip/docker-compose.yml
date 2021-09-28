@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: egea_chip
+    build: .
+    container_name: egea_chip
+    restart: always
+    ports:
+      - "8080:80"
