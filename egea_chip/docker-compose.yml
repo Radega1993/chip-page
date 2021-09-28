@@ -1,9 +1,23 @@
 version: '3'
 services:
-  web:
-    image: egea_chip
-    build: .
-    container_name: egea_chip
-    restart: always
+  web-egea:
+    build:
+      dockerfile: php.Dockerfile
+      context: .
+    restart: unless-stopped
+    volumes:
+      - "./html/:/var/www/html/"
     ports:
-      - "8080:80"
+      - "8090:80"
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:egea.zeroescusas.com
+      - traefik.frontend.protocol=http
+      - traefik.frontend.entryPoints=http,https
+      - traefik.port=80
+      - traefik.docker.network=web
+    networks:
+      - web
+networks:
+  web:
+    external: true
