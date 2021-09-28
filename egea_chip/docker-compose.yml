@@ -11,7 +11,7 @@ services:
       - "8090:80"
     labels:
       - traefik.enable=true
-      - traefik.frontend.rule=Host:egea.zeroescusas.com
+      - traefik.frontend.rule=Host:egea.paraanime.com
       - traefik.frontend.protocol=http
       - traefik.frontend.entryPoints=http,https
       - traefik.port=80
